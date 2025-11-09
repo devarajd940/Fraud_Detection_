@@ -1,0 +1,159 @@
+2025-09-28 17:45:07,236 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] - --------------------------------------------------------------------------------
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  Preconfiguration: 
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] - 
+
+
+RESOURCE_PARAMS extraction logs:
+jvm_params: -Xmx536870902 -Xms536870902 -XX:MaxDirectMemorySize=268435458 -XX:MaxMetaspaceSize=268435456
+dynamic_configs: -D taskmanager.memory.network.min=134217730b -D taskmanager.cpu.cores=1.0 -D taskmanager.memory.task.off-heap.size=0b -D taskmanager.memory.jvm-metaspace.size=268435456b -D external-resources=none -D taskmanager.memory.jvm-overhead.min=201326592b -D taskmanager.memory.framework.off-heap.size=134217728b -D taskmanager.memory.network.max=134217730b -D taskmanager.memory.framework.heap.size=134217728b -D taskmanager.memory.managed.size=536870920b -D taskmanager.memory.task.heap.size=402653174b -D taskmanager.numberOfTaskSlots=1 -D taskmanager.memory.jvm-overhead.max=201326592b
+logs: INFO  [] - Using standard YAML parser to load flink configuration file from /Users/dev/Fraud_Detection/flink-1.20.2/conf/config.yaml.
+INFO  [] - Loading configuration property: taskmanager.memory.process.size, 1728m
+INFO  [] - Loading configuration property: taskmanager.bind-host, localhost
+INFO  [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+INFO  [] - Loading configuration property: jobmanager.rpc.address, localhost
+INFO  [] - Loading configuration property: jobmanager.memory.process.size, 1600m
+INFO  [] - Loading configuration property: jobmanager.rpc.port, 6123
+INFO  [] - Loading configuration property: rest.bind-address, localhost
+INFO  [] - Loading configuration property: jobmanager.bind-host, localhost
+INFO  [] - Loading configuration property: taskmanager.host, localhost
+INFO  [] - Loading configuration property: parallelism.default, 1
+INFO  [] - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+INFO  [] - Loading configuration property: rest.address, localhost
+INFO  [] - Loading configuration property: env.java.opts.all, --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED
+INFO  [] - The derived from fraction jvm overhead memory (172.800mb (181193935 bytes)) is less than its min value 192.000mb (201326592 bytes), min value will be used instead
+INFO  [] - Final TaskExecutor Memory configuration:
+INFO  [] -   Total Process Memory:          1.688gb (1811939328 bytes)
+INFO  [] -     Total Flink Memory:          1.250gb (1342177280 bytes)
+INFO  [] -       Total JVM Heap Memory:     512.000mb (536870902 bytes)
+INFO  [] -         Framework:               128.000mb (134217728 bytes)
+INFO  [] -         Task:                    384.000mb (402653174 bytes)
+INFO  [] -       Total Off-heap Memory:     768.000mb (805306378 bytes)
+INFO  [] -         Managed:                 512.000mb (536870920 bytes)
+INFO  [] -         Total JVM Direct Memory: 256.000mb (268435458 bytes)
+INFO  [] -           Framework:             128.000mb (134217728 bytes)
+INFO  [] -           Task:                  0 bytes
+INFO  [] -           Network:               128.000mb (134217730 bytes)
+INFO  [] -     JVM Metaspace:               256.000mb (268435456 bytes)
+INFO  [] -     JVM Overhead:                192.000mb (201326592 bytes)
+
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] - --------------------------------------------------------------------------------
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  Starting TaskManager (Version: 1.20.2, Scala: 2.12, Rev:1641cb9, Date:2025-06-12T21:40:37+02:00)
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  OS current user: dev
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  Current Hadoop/Kerberos user: <no hadoop dependency found>
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  JVM: OpenJDK 64-Bit Server VM - Homebrew - 17/17.0.16+0
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  Arch: aarch64
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  Maximum heap size: 512 MiBytes
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  JAVA_HOME: /opt/homebrew/opt/openjdk@17
+2025-09-28 17:45:07,237 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  No Hadoop Dependency available
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  JVM Options:
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -Xmx536870902
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -Xms536870902
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -XX:MaxDirectMemorySize=268435458
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -XX:MaxMetaspaceSize=268435456
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -XX:+IgnoreUnrecognizedVMOptions
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-exports=java.base/sun.net.util=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.lang=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.net=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.io=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.nio=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/sun.nio.ch=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.text=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.time=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.util=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -Dlog.file=/Users/dev/Fraud_Detection/flink-1.20.2/log/flink-dev-taskexecutor-1-Ds-MacBook-Air.local.log
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -Dlog4j.configuration=file:/Users/dev/Fraud_Detection/flink-1.20.2/conf/log4j.properties
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -Dlog4j.configurationFile=file:/Users/dev/Fraud_Detection/flink-1.20.2/conf/log4j.properties
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -Dlogback.configurationFile=file:/Users/dev/Fraud_Detection/flink-1.20.2/conf/logback.xml
+2025-09-28 17:45:07,238 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  Program Arguments:
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     --configDir
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     /Users/dev/Fraud_Detection/flink-1.20.2/conf
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.network.min=134217730b
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.cpu.cores=1.0
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.task.off-heap.size=0b
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.jvm-metaspace.size=268435456b
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     external-resources=none
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.jvm-overhead.min=201326592b
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.framework.off-heap.size=134217728b
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,239 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.network.max=134217730b
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.framework.heap.size=134217728b
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.managed.size=536870920b
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.task.heap.size=402653174b
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.numberOfTaskSlots=1
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     -D
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -     taskmanager.memory.jvm-overhead.max=201326592b
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] -  Classpath: /Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-cep-1.20.2.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-connector-files-1.20.2.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-connector-kafka-3.4.0-1.20.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-csv-1.20.2.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-json-1.20.2.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-scala_2.12-1.20.2.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-table-api-java-uber-1.20.2.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-table-planner-loader-1.20.2.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-table-runtime-1.20.2.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/kafka-clients-3.6.0.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/log4j-1.2-api-2.24.3.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/log4j-api-2.24.3.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/log4j-core-2.24.3.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/log4j-slf4j-impl-2.24.3.jar:/Users/dev/Fraud_Detection/flink-1.20.2/lib/flink-dist-1.20.2.jar::::
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] - --------------------------------------------------------------------------------
+2025-09-28 17:45:07,240 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] - Registered UNIX signal handlers for [TERM, HUP, INT]
+2025-09-28 17:45:07,242 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner      [] - Maximum number of open file descriptors is 1048576.
+2025-09-28 17:45:07,244 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Using standard YAML parser to load flink configuration file from /Users/dev/Fraud_Detection/flink-1.20.2/conf/config.yaml.
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.memory.process.size, 1728m
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.bind-host, localhost
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.execution.failover-strategy, region
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.address, localhost
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.memory.process.size, 1600m
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.rpc.port, 6123
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: rest.bind-address, localhost
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: jobmanager.bind-host, localhost
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.host, localhost
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: parallelism.default, 1
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: rest.address, localhost
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: env.java.opts.all, --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.rmi/sun.rmi.registry=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.network.min, 134217730b
+2025-09-28 17:45:07,260 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.jvm-metaspace.size, 268435456b
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.task.off-heap.size, 0b
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.cpu.cores, 1.0
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: external-resources, none
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.jvm-overhead.min, 201326592b
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.framework.off-heap.size, 134217728b
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.network.max, 134217730b
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.framework.heap.size, 134217728b
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.managed.size, 536870920b
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.task.heap.size, 402653174b
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.numberOfTaskSlots, 1
+2025-09-28 17:45:07,261 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading dynamic configuration property: taskmanager.memory.jvm-overhead.max, 201326592b
+2025-09-28 17:45:07,276 INFO  org.apache.flink.core.fs.FileSystem                          [] - Hadoop is not in the classpath/dependencies. The extended set of supported File Systems via Hadoop is not available.
+2025-09-28 17:45:07,283 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-statsd
+2025-09-28 17:45:07,284 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-prometheus
+2025-09-28 17:45:07,285 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-graphite
+2025-09-28 17:45:07,285 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: external-resource-gpu
+2025-09-28 17:45:07,285 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-jmx
+2025-09-28 17:45:07,285 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-influx
+2025-09-28 17:45:07,285 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-slf4j
+2025-09-28 17:45:07,285 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID not found, creating it: metrics-datadog
+2025-09-28 17:45:07,292 INFO  org.apache.flink.runtime.state.changelog.StateChangelogStorageLoader [] - StateChangelogStorageLoader initialized with shortcut names {memory,filesystem}.
+2025-09-28 17:45:07,292 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-statsd
+2025-09-28 17:45:07,292 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-prometheus
+2025-09-28 17:45:07,292 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-graphite
+2025-09-28 17:45:07,292 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: external-resource-gpu
+2025-09-28 17:45:07,292 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-jmx
+2025-09-28 17:45:07,292 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-influx
+2025-09-28 17:45:07,292 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-slf4j
+2025-09-28 17:45:07,292 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-datadog
+2025-09-28 17:45:07,292 INFO  org.apache.flink.runtime.state.changelog.StateChangelogStorageLoader [] - StateChangelogStorageLoader initialized with shortcut names {memory,filesystem}.
+2025-09-28 17:45:07,296 INFO  org.apache.flink.runtime.security.modules.HadoopModuleFactory [] - Cannot create Hadoop Security Module because Hadoop cannot be found in the Classpath.
+2025-09-28 17:45:07,306 INFO  org.apache.flink.runtime.security.modules.JaasModule         [] - Jaas file will be created as /var/folders/w8/tq7jb3rs56d45dstn263zg080000gn/T/jaas-8755622918508613317.conf.
+2025-09-28 17:45:07,307 INFO  org.apache.flink.runtime.security.contexts.HadoopSecurityContextFactory [] - Cannot install HadoopSecurityContext because Hadoop cannot be found in the Classpath.
